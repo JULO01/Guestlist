@@ -6,7 +6,7 @@ import NameInputButton from "@/components/NameInputButton.vue"
 const localVue = createLocalVue()
   let vuetify: any;
 
-  beforeEach(() => {
+beforeEach(() => {
     vuetify = new Vuetify()
   })
 
