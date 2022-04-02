@@ -9,8 +9,11 @@ export default new Vuex.Store({
   },
   mutations: {
     addGuest(state, guest){
-      state.guests.push(guest);
-    }
+      state.guests.unshift(guest);
+    },
+    deleteGuest(state, index){
+      state.guests.splice(index, 1);
+    },
   },
   actions: {
   },
