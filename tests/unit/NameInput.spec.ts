@@ -24,7 +24,7 @@ describe('NameInput.vue', () => {
     })
 
 
-    it('clears input after "add" button clicked', async () => {
+    it('clears input when clicking button', async () => {
         const wrapper = mount(NameInput, {
             localVue,
             vuetify,
@@ -41,7 +41,7 @@ describe('NameInput.vue', () => {
         expect(inputElement.value).toBe("");
     });
 
-    it('commits the mutation "addGuest" with mockArgument as argument', async () => {
+    it('commits the mutation "addGuest" with input value as argument when clicking button', async () => {
         const wrapper = mount(NameInput, {
             localVue,
             vuetify,
