@@ -56,7 +56,7 @@ describe('NameInput.vue', () => {
         await button.trigger("click");
 
         // mutation gets the argument as second argument
-        expect(mutations.addGuest).toHaveBeenCalledWith({}, mockArgument);
+        expect(mutations.addGuest).toHaveBeenCalledWith(expect.anything(), mockArgument);
     })
 
 })
