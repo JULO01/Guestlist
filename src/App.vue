@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <v-container>
+      <img alt="Vue logo" height="250em" src="./assets/guestlist.png" />
+      <NameInput />
+      <GuestList />
+    </v-container>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Vue from "vue";
+import NameInput from "./components/NameInput.vue";
+import GuestList from "./components/GuestList.vue";
 
 export default Vue.extend({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    NameInput,
+    GuestList,
+  },
 });
 </script>
 
