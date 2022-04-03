@@ -40,6 +40,14 @@ export default Vue.extend({
   },
   mounted() {
     this.guestName = "";
+
+    const btn = document.querySelector(".input-button");
+    if (btn){
+      btn.addEventListener("touchend", (e)=>{
+        e.preventDefault();
+        this.addGuestClicked(this.guestName);
+      })
+    }
   },
 });
 </script>
